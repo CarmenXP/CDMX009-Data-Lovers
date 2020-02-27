@@ -11,14 +11,39 @@
   </head>
   <body>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCpbYbZHd0WOKsJjr0OKHWnyVtVvBneBZo",
+    authDomain: "new-morties.firebaseapp.com",
+    databaseURL: "https://new-morties.firebaseio.com",
+    projectId: "new-morties",
+    storageBucket: "new-morties.appspot.com",
+    messagingSenderId: "647163568802",
+    appId: "1:647163568802:web:97a2a402b5e5c7a7796dfb",
+    measurementId: "G-SBH3YND05K"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
     <h1> New morty</h1>
     <div id="root"></div>
-
+      <button id=facebook>Log With Facebook</button>
       <!--sección registro email y contraseña -->
       <input type="email" placeholder="correo" id="email"><br>
       <input type="password" placeholder="contraseña" id="password"><br>
       <button onclick="registrar()">Registrar</button>
-      
-    <script type="module" src="main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="module" src="main.js"></script>
   </body>
 </html>
