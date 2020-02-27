@@ -3,11 +3,8 @@ import { example } from './data.js';
 // nodos
 let button = document.querySelector('#facebook')
 
-
 function login(){
   var provider = new firebase.auth.FacebookAuthProvider();
-  //function accederFacebook(){
-    //let logIn = document.getElementById('facebook');
     firebase.auth().signInWithPopup(provider)
     .then(function(result) {
     var user = result.user;
@@ -21,12 +18,17 @@ function login(){
 button.addEventListener("click", login)
 
 
-
-
-
-
-//funciones para botones
+//  registro
 function registrar(){
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
+  firebase.auth().signInWithEmailAndPassword(email, password)
+  .catch(function(error) {
+  var errorCode = error.code;
+  var errorMessage = error.message;
+});
+  console.log(email);
+  console.log(password);
 }
+
+registro.addEventListener("click", registrar)
