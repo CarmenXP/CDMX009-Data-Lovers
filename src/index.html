@@ -49,37 +49,63 @@
   crossorigin="anonymous"></script>
   <script type="module" src="main.js"></script>
 
-<!-- Preguntas resgistro-->
-<p> ¿Cuál es tu status actualmente?
-    <select name ="status">
-      <option>Alive</option>
-      <option>Dead</option>
-      <option>Unknown</option>
-   </select>
-</p>
-<p> ¿Cuál es tu Origen?
-    <select name ="origen">
-      <option>Earth C-137</option>
-      <option>Earth K-22</option>
-      <option>Earth Unknown dimension</option>
-      <option>Intersimensional cable</option>
-   </select>
-</p>
-<p> ¿Cuál es tu especie?
-    <select name ="especie">
-      <option>Humano</option>
-      <option>Humanoide</option>
-      <option>Humanoide, Amoeba-Person</option>
-      <option>Humanoide, Miniverse</option>
-      <option>Alien</option>
-      <option>Alien, Animal</option>
-      <option>Alien, Eel</option>
-      <option>Alien, Jellybean</option>
-      <option>Alien, Parasite</option>
-      <option>Alien, Zombodian</option>
-    </select>
-</p>
+<!--pantalla 2 formulario -->
+  <h3>responde formulario</h3>
 
+    <!--seleccionar edad -->
+    <form>
+      <label>Selecciona tu edad
+        <input type="number" name="edad" min="13" max="35"></label>
+    </form>
+
+    <!--seleccionar gender -->
+      <label>Selecciona tu género</label>
+        <select id="genero">
+          <option value="male">Masculino</option>
+          <option value="female">Femenino</option>
+          <option value="unknown">Desconocido</option>
+        </select><br>
+
+    <!-- seleccionar especie-->
+      <label>Selecciona tu especie</label>
+          <select id="especie">
+            <option value="human">Humano</option>
+            <option value="humaniode">Humanoide</option>
+            <option value="alien">Alien</option>
+            <option value="animal">Animal</option>
+            <option value="parasite">Parásito</option>
+            <option value="zombie">Zombie</option>
+            <option value="robot">Robot</option>
+            <option value="unknown2">Desconocida</option>
+          </select><br>
+
+    <!-- preguntas adicionales-->
+      <label>¿Cuál es tu atracción favorita en el Anatomy Park?</label>
+            <select>
+              <option>El Hígado Embrujado</option>
+              <option>Las cascadas Vejiga</option>
+              <option>Piratas del Páncreas</option>
+              <option>La Montaña Bazo</option>
+            </select><br>
+
+      <label>¿Habitas el Universo donde naciste?</label>
+          <select>
+            <option>Si</option>
+            <option>Obvio no</option>
+            <option>No estoy seguro</option>
+          </select><br>
+
+      <label>¿Qué show prefieres ver en Interdimensional Cable?</label>
+          <select>
+            <option>Ball Fondlers</option>
+            <option>The Days and Nights of Mrs. Pancakes</option>
+            <option>Gazorpazorpfield</option>
+            <option>How Did I Get Here?</option>
+            <option>Shmlo's the Shmloss?</option>
+          </select><br>
+
+  <!-- botón enviar formulario-->
+          <button id="enviar">Enviar</button>
 
   </body>
 </html>
