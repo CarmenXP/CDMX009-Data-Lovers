@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
+<section id= screen1>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase.js"></script>
 
@@ -32,41 +32,75 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
+<div class ="header">
+<div id="root"></div>
+</div>
+<!-- Creando contenedores para imagen y forma de registro-->
+<div class= "maincontent">
+<div class ="content1">
+  <div class="img">
+    <img id=rym src= "imagens/R&M.png">
+  </div>
+</div>
+<div class ="content2">
+  <h1> New Mortys</h1>
+  <br>
+  <br>
+     <!--inicio facebook -->
+     <div class = "button">
+    <button id=facebook>Log With Facebook</button><br>
+    </div>
 
-    <h1> New Mortys</h1>
-    <div id="root"></div>
-
-      <!--inicio facebook -->
-      <button id=facebook>Log With Facebook</button><br>
-
-      <!--registro email y contraseña -->
-      <input type="email" placeholder="correo" id="email"><br>
-      <input type="password" placeholder="contraseña" id="password"><br>
+    <!--registro email y contraseña -->
+      <div class = "placeholder">
+      <input type="email" placeholder="correo" id="email"><br><br>
+      <input type="password" placeholder="contraseña" id="password"><br><br>
       <button id="registro">Registrar</button>
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   <script type="module" src="main.js"></script>
-
+  </div>
+  </div>
+  <!-- Footer -->
+<div class="footer">
+</div>
+</section>
 <!--pantalla 2 formulario -->
+<section id= screen2>
+  <div class ="header2">
+    <h2>New Morty</h2>
+  </div>
+  <div class= "maincontent1">
+  <div class ="content3">
+
   <h3>Responde esta trivia para identificarte con un personaje</h3>
+  <br><br>
 
     <!--seleccionar edad -->
+    <div class="edad">
     <form>
       <label>Selecciona tu edad
         <input type="number" name="edad" min="13" max="35"></label>
     </form>
+  </div>
+ <br>
 
     <!--seleccionar gender -->
+    <div class="gender">
       <label>Selecciona tu género</label>
         <select id="genero">
           <option value="male">Masculino</option>
           <option value="female">Femenino</option>
           <option value="unknown">Desconocido</option>
-        </select><br>
+        </select>
+      </div>
+        <br>
 
     <!-- seleccionar especie-->
+    <div class="specie" >
       <label>Selecciona tu especie</label>
           <select id="especie">
             <option value="human">Humano</option>
@@ -77,8 +111,9 @@
             <option value="zombie">Zombie</option>
             <option value="robot">Robot</option>
             <option value="unknown2">Desconocida</option>
-          </select><br>
-
+          </select>
+</div>
+<br>
     <!-- preguntas adicionales-->
       <label>¿Cuál es tu atracción favorita en el Anatomy Park?</label>
             <select>
@@ -86,14 +121,14 @@
               <option>Las cascadas Vejiga</option>
               <option>Piratas del Páncreas</option>
               <option>La Montaña Bazo</option>
-            </select><br>
+            </select><br><br>
 
       <label>¿Habitas el Universo donde naciste?</label>
           <select>
             <option>Si</option>
             <option>Obvio no</option>
             <option>No estoy seguro</option>
-          </select><br>
+          </select><br><br>
 
       <label>¿Qué show prefieres ver en Interdimensional Cable?</label>
           <select>
@@ -102,10 +137,16 @@
             <option>Gazorpazorpfield</option>
             <option>How Did I Get Here?</option>
             <option>Shmlo's the Shmloss?</option>
-          </select><br>
+          </select><br><br><br>
 
   <!-- botón enviar formulario-->
           <button id="enviar">Enviar</button>
+        </div>
+        </div>
+          <div class="footer2">
+          </div>
+    </section>
+
 
   </body>
 </html>
