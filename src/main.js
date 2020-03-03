@@ -1,4 +1,6 @@
-import { example } from './data.js';
+import data from './data/rickandmorty/rickandmorty.js';
+import {personaje} from './data.js'
+console.log(personaje);
 
 // nodos
 let button = document.querySelector('#facebook')
