@@ -123,13 +123,12 @@ display: flex;
 background-color: #fff;
 height: 600px;
 flex-wrap: wrap;
-justify-content: flex-start;
+justify-content:  center;
 }
 .content3{
   background: #54d6b2;
   width: 55%;
   height: 500px;
-  align-self: start;
   text-align: left;
 }
 
@@ -145,7 +144,7 @@ justify-content: flex-start;
   padding: 14px 40px;
   border-radius: 12px;
   cursor: pointer;
-  transition-duration: 0.4s;  
+  transition-duration: 0.4s;
 }
 #enviar:hover {
   background-color:#bd6aff;
@@ -157,7 +156,7 @@ padding: 15px;
 background: #54d6b2;
 }
 #screen1 {
-display: none;
+display: block;
 }
 #screen2 {
 display: block;

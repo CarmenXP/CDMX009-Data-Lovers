@@ -1,7 +1,21 @@
 import data from './data/rickandmorty/rickandmorty.js';
 import {yourHuman,
-        yourHumanoid} from './data.js'
-console.log(yourHuman, yourHumanoid);
+        yourHumanoid,
+      yourAlien,
+    yourAnimal,
+    yourParasite,
+    yourZombie,
+    yourRobot,
+    yourVampire,
+  }
+   from './data.js'
+console.log(yourHuman, yourHumanoid,yourAlien,
+yourAnimal,
+yourParasite,
+yourZombie,
+yourRobot,
+yourVampire,
+);
 
 // nodos
 let button = document.querySelector('#facebook')
