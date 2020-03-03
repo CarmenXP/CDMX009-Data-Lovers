@@ -1,6 +1,7 @@
 import data from './data/rickandmorty/rickandmorty.js';
-import {personaje} from './data.js'
-console.log(personaje);
+import {yourHuman,
+        yourHumanoid} from './data.js'
+console.log(yourHuman, yourHumanoid);
 
 // nodos
 let button = document.querySelector('#facebook')

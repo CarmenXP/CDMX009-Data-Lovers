@@ -13,4 +13,5 @@ La misma función usando retornos implícitos
 const fn = () => () => true; */
 
 //filtrar datos
-export const personaje = data.results.filter((human) => human.species === 'Human');
+export const yourHuman = data.results.filter((character) => character.species === 'Human');
+export const yourHumanoid = data.results.filter((character) => character.species === 'Humanoid');
