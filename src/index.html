@@ -80,13 +80,11 @@
   <br><br>
 
     <!--seleccionar edad -->
+  <form id="formulario">
     <div class="edad">
-    <form>
       <label>Selecciona tu edad
         <input type="number" name="edad" min="13" max="35"></label>
-    </form>
-  </div>
- <br>
+    </div><br>
 
     <!--seleccionar gender -->
     <div class="gender">
@@ -96,8 +94,7 @@
           <option value="female">Femenino</option>
           <option value="unknown">Desconocido</option>
         </select>
-      </div>
-        <br>
+      </div><br>
 
     <!-- seleccionar especie-->
     <div class="specie" >
@@ -111,10 +108,9 @@
             <option value="zombie">Zombie</option>
             <option value="robot">Robot</option>
             <option value="vampire">Vampire</option>
-      
           </select>
-</div>
-<br>
+    </div><br>
+
     <!-- preguntas adicionales-->
       <label>¿Cuál es tu atracción favorita en el Anatomy Park?</label>
             <select>
@@ -141,12 +137,15 @@
           </select><br><br><br>
 
   <!-- botón enviar formulario-->
-          <button id="enviar">Enviar</button>
-        </div>
-        </div>
+          <button type='submit'>Enviar</button>
+        </form>
+      </div>
+    </div>
+
           <div class="footer2">
           </div>
-    </section>
+  </section>
+
 
     <script type="module" src="main.js"></script>
 
