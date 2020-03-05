@@ -19,8 +19,17 @@ import {yourHuman,
 
 // nodos
 let button = document.querySelector('#facebook')
-let form= document.querySelector('#formulario')
+var specieList = document.getElementsByClassName("clase")
+let saveSpecie = [];
+var genderList = document.getElementsByClassName("sexo")
+let saveGender = [];
 
+
+// listeners
+button.addEventListener("click", login)
+registro.addEventListener("click", registrar)
+
+//  login
 function login(){
   var provider = new firebase.auth.FacebookAuthProvider();
     firebase.auth().signInWithPopup(provider)
@@ -32,13 +41,6 @@ function login(){
   });
 }
 
-// listeners
-button.addEventListener("click", login)
-registro.addEventListener("click", registrar)
-form.addEventListener("submit",getForm)
-
-
-//  registro
 function registrar(){
   var email = document.querySelector('#email').value;
   var password = document.querySelector('#password').value;
@@ -49,11 +51,21 @@ function registrar(){
 });
 }
 
-//funcion enviar formulario
-function getForm(e){
-  e.preventDefault()
-  let fo=e.target
+//funcion lista especies y género
+for(let i = 0; i < specieList.length ; i++) {
+  saveSpecie.push(specieList[i].value);
+};
+console.log(saveSpecie)
 
-  console.log(especie.value)
-  console.log(especie.value)
-}
+for(let i=0; i<genderList.length; i++){
+  saveGender.push(genderList[i].value);
+};
+
+console.log(genderList.value)
+
+//new array con género y especie seleccionada
+//let newArray = [saveSpecie].concat(saveGender);
+//console.log(newArray)
+
+//let arr = [...saveSpecie,...saveGender];
+//console.log(arr)

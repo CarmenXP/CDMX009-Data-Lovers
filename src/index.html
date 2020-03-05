@@ -90,24 +90,24 @@
     <div class="gender">
       <label>Selecciona tu género</label>
         <select id="genero">
-          <option value="male">Masculino</option>
-          <option value="female">Femenino</option>
-          <option value="unknown">Desconocido</option>
+          <option value="male" class="sexo">Masculino</option>
+          <option value="female" class="sexo">Femenino</option>
+          <option value="unknown" class="sexo">Desconocido</option>
         </select>
       </div><br>
 
     <!-- seleccionar especie-->
-    <div class="specie" >
+    <div class="specie" id = "specie">
       <label>Selecciona tu especie</label>
           <select id="especie">
-            <option value="human">Humano</option>
-            <option value="humaniode">Humanoide</option>
-            <option value="alien">Alien</option>
-            <option value="animal">Animal</option>
-            <option value="parasite">Parásito</option>
-            <option value="zombie">Zombie</option>
-            <option value="robot">Robot</option>
-            <option value="vampire">Vampire</option>
+            <option value="human" class="clase">Humano</option>
+            <option value="humanoide" class="clase">Humanoide</option>
+            <option value="alien" class="clase">Alien</option>
+            <option value="animal" class="clase">Animal</option>
+            <option value="parasite" class="clase">Parásito</option>
+            <option value="zombie" class="clase">Zombie</option>
+            <option value="robot" class="clase">Robot</option>
+            <option value="vampire" class="clase">Vampire</option>
           </select>
     </div><br>
 
@@ -137,7 +137,7 @@
           </select><br><br><br>
 
   <!-- botón enviar formulario-->
-          <button type='submit'>Enviar</button>
+          <button type="onchange" id="enviar" >Enviar</button>
         </form>
       </div>
     </div>

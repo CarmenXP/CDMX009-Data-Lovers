@@ -21,3 +21,5 @@ export const yourParasite = data.results.filter((character) => character.species
 export const yourZombie = data.results.filter((character) => character.species === 'Zombie');
 export const yourRobot = data.results.filter((character) => character.species === 'Robot');
 export const yourVampire = data.results.filter((character) => character.species === 'Vampire');
+
+//export const getSpecie = data.results.filter((character)) => character.species);
