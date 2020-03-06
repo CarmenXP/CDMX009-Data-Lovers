@@ -7,6 +7,8 @@ import {yourHuman,
     yourZombie,
     yourRobot,
     yourVampire,
+    getSpecie,
+    getGender
   }
    from './data.js'
 //console.log(yourHuman, yourHumanoid,yourAlien,
@@ -19,6 +21,10 @@ import {yourHuman,
 
 // nodos
 let button = document.querySelector('#facebook')
+let gender= document.querySelector('.gender')
+let specie= document.querySelector('.specie')
+let enviar = document.querySelector("#enviar")
+
 var specieList = document.getElementsByClassName("clase")
 let saveSpecie = [];
 var genderList = document.getElementsByClassName("sexo")
@@ -28,6 +34,19 @@ let saveGender = [];
 // listeners
 button.addEventListener("click", login)
 registro.addEventListener("click", registrar)
+//form.addEventListener("change", getForm)
+
+
+
+enviar.addEventListener('click', e=>{
+console.log(getSpecie(e.target.value))
+})
+
+
+//form.addEventListener("change", (event) => {
+//  const fo = e.target.value
+//console.log(fo)
+//});
 
 //  login
 function login(){
@@ -51,17 +70,27 @@ function registrar(){
 });
 }
 
+//function getForm(e){
+//  e.preventDefault()
+//  let fo= e.target.value
+//    console.log(fo)
+//}
+
+
+
+
+
 //funcion lista especies y género
-for(let i = 0; i < specieList.length ; i++) {
-  saveSpecie.push(specieList[i].value);
-};
-console.log(saveSpecie)
-
-for(let i=0; i<genderList.length; i++){
-  saveGender.push(genderList[i].value);
-};
-
-console.log(genderList.value)
+//for(let i = 0; i < specieList.length ; i++) {
+//  saveSpecie.push(specieList[i].value);
+//};
+//console.log(saveSpecie)
+//
+//for(let i=0; i<genderList.length; i++){
+//  saveGender.push(genderList[i].value);
+//};
+//
+//console.log(genderList.value)
 
 //new array con género y especie seleccionada
 //let newArray = [saveSpecie].concat(saveGender);

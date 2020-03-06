@@ -12,7 +12,11 @@ import data from './data/rickandmorty/rickandmorty.js';
 La misma función usando retornos implícitos
 const fn = () => () => true; */
 
-//filtrar datos
+//filtrar bySpecie
+export const getSpecie= (para) => data.results.filter((character) => character.species === para);
+export const getGender = data.results.filter((character) => character.gender);
+
+
 export const yourHuman = data.results.filter((character) => character.species === 'Human');
 export const yourHumanoid = data.results.filter((character) => character.species === 'Humanoid');
 export const yourAlien = data.results.filter((character) => character.species === 'Alien');
@@ -21,5 +25,3 @@ export const yourParasite = data.results.filter((character) => character.species
 export const yourZombie = data.results.filter((character) => character.species === 'Zombie');
 export const yourRobot = data.results.filter((character) => character.species === 'Robot');
 export const yourVampire = data.results.filter((character) => character.species === 'Vampire');
-
-//export const getSpecie = data.results.filter((character)) => character.species);
