@@ -21,32 +21,16 @@ import {yourHuman,
 
 // nodos
 let button = document.querySelector('#facebook')
-let gender= document.querySelector('.gender')
-let specie= document.querySelector('.specie')
-let enviar = document.querySelector("#enviar")
+let form = document.querySelector(".persona")
 
-var specieList = document.getElementsByClassName("clase")
-let saveSpecie = [];
-var genderList = document.getElementsByClassName("sexo")
-let saveGender = [];
+let profile = [];
 
 
 // listeners
 button.addEventListener("click", login)
 registro.addEventListener("click", registrar)
-//form.addEventListener("change", getForm)
+form.addEventListener("change",getForm)
 
-
-
-enviar.addEventListener('click', e=>{
-console.log(getSpecie(e.target.value))
-})
-
-
-//form.addEventListener("change", (event) => {
-//  const fo = e.target.value
-//console.log(fo)
-//});
 
 //  login
 function login(){
@@ -70,11 +54,24 @@ function registrar(){
 });
 }
 
-//function getForm(e){
-//  e.preventDefault()
-//  let fo= e.target.value
-//    console.log(fo)
-//}
+function getForm(e){
+  e.preventDefault()
+  profile.push(e.target.value)
+
+  console.log(profile)
+}
+//NUEVO array
+//for(let i=0; i<fo.length; i++){
+//  profile.push(fo[i].value);
+//  console.log(profile)
+//};
+
+//enviar.addEventListener('click', e => {
+//  e.preventDefault();
+//  e.stopPropagation();
+//  alert('works');
+//  console.log(getSpecie(e.target.value))
+//})
 
 
 
