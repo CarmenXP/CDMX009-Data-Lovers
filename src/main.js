@@ -1,36 +1,27 @@
 import data from './data/rickandmorty/rickandmorty.js';
-import {yourHuman,
-        yourHumanoid,
-      yourAlien,
-    yourAnimal,
-    yourParasite,
-    yourZombie,
-    yourRobot,
-    yourVampire,
-    getSpecie,
-    getGender
+import {getSpecie,
+    getGender,
+    yourHuman,
+    getCharsBySpecie,
+    getCharsByGender
   }
    from './data.js'
-//console.log(yourHuman, yourHumanoid,yourAlien,
-//yourAnimal,
-//yourParasite,
-//yourZombie,
-//yourRobot,
-//yourVampire,
-//);
+console.log(getSpecie,getGender);
 
 // nodos
 let button = document.querySelector('#facebook')
 let form = document.querySelector(".persona")
-
 let profile = [];
-
+let character = document.querySelector("#enviar")
+let especieSelect = document.querySelector('#especie')
+let genderSelect = document.querySelector('#genero')
 
 // listeners
+especieSelect.addEventListener('change', getForm)
 button.addEventListener("click", login)
 registro.addEventListener("click", registrar)
 form.addEventListener("change",getForm)
-
+character.addEventListener("click", getCharacter)
 
 //  login
 function login(){
@@ -54,27 +45,33 @@ function registrar(){
 });
 }
 
+//array género y especie
 function getForm(e){
+  let specie = e.target.value
+  let gender = genderSelect.value
+  let list = getCharsByGender(gender)
+  let list2 = getCharsBySpecie(specie, list)
+  console.log(list2)
+  // Dibujar en el dom
+
+}
+
+//obtener personaje filtrado
+function getCharacter (profile, e){
   e.preventDefault()
-  profile.push(e.target.value)
 
   console.log(profile)
-}
-//NUEVO array
-//for(let i=0; i<fo.length; i++){
-//  profile.push(fo[i].value);
-//  console.log(profile)
-//};
 
-//enviar.addEventListener('click', e => {
-//  e.preventDefault();
-//  e.stopPropagation();
-//  alert('works');
-//  console.log(getSpecie(e.target.value))
-//})
+};
 
-
-
+  //function getCharacter(profile, getSpecie, e) {
+  //  e.preventDefault()
+  //  specieList = [];
+  //  for (var i = 0; i < profile.length; i++) {
+  //    specieList.push(getSpecie(profile[i].value));
+  //  }
+  //  console.log(specieList);
+  //}
 
 
 //funcion lista especies y género
@@ -88,10 +85,3 @@ function getForm(e){
 //};
 //
 //console.log(genderList.value)
-
-//new array con género y especie seleccionada
-//let newArray = [saveSpecie].concat(saveGender);
-//console.log(newArray)
-
-//let arr = [...saveSpecie,...saveGender];
-//console.log(arr)
