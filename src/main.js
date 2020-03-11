@@ -46,7 +46,15 @@ function getGenderAndSpecie(e){
   let gender = genderSelect.value
   let list = getCharsByGender(gender)
   let list2 = getCharsBySpecie(specie, list)
-  console.log(list2)
+//  console.log(list2)
   // personaje en el dom
-    document.innerHtml=list2
+
+
+  document.getElementById("resultadoLista").innerHTML = JSON.stringify(valor);
+
 }
+}
+
+//let array = list2.values();
+//for (let valor of array){
+//  console.log(valor);
