@@ -13,10 +13,10 @@ let genderSelect = document.querySelector('#genero')
 let getYourCharacter = document.querySelector('#enviar')
 
 // listeners
-button.addEventListener("click", login)
-registro.addEventListener("click", registrar)
+button.addEventListener('click', login)
+registro.addEventListener('click', registrar)
 especieSelect.addEventListener('change', getGenderAndSpecie)
-//getYourCharacter.addEventListener("click", getCharacter)
+//getYourCharacter.addEventListener('submit', randomCharacter)
 
 //  login
 function login(){
@@ -46,15 +46,9 @@ function getGenderAndSpecie(e){
   let gender = genderSelect.value
   let list = getCharsByGender(gender)
   let list2 = getCharsBySpecie(specie, list)
-//  console.log(list2)
+console.log(list2)
   // personaje en el dom
-
-
-  document.getElementById("resultadoLista").innerHTML = JSON.stringify(valor);
-
+    let character = list2.values();
+      for (let valor of character){
+        document.getElementById("tuPersonaje").innerHTML += "¡Hola " + `${valor.name}` + "!"}
 }
-}
-
-//let array = list2.values();
-//for (let valor of array){
-//  console.log(valor);
