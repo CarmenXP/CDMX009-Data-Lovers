@@ -3,7 +3,7 @@ import {getCharsBySpecie,
   getCharsByGender
   }
    from './data.js'
-console.log(getSpecie,getGender);
+
 
 // nodos
 let button = document.querySelector('#facebook')
@@ -15,9 +15,8 @@ let getYourCharacter = document.querySelector('#enviar')
 // listeners
 button.addEventListener("click", login)
 registro.addEventListener("click", registrar)
-especieSelect.addEventListener('change', getForm)
-select.addEventListener("change", getGenderAndSpecie)
-getYourCharacter.addEventListener("click", getCharacter)
+especieSelect.addEventListener('change', getGenderAndSpecie)
+//getYourCharacter.addEventListener("click", getCharacter)
 
 //  login
 function login(){
@@ -48,6 +47,6 @@ function getGenderAndSpecie(e){
   let list = getCharsByGender(gender)
   let list2 = getCharsBySpecie(specie, list)
   console.log(list2)
+  // personaje en el dom
+    document.innerHtml=list2
 }
-
-//dom personaje filtrado
