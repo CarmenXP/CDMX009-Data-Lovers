@@ -16,7 +16,9 @@ let getYourCharacter = document.querySelector('#enviar')
 button.addEventListener('click', login)
 registro.addEventListener('click', registrar)
 especieSelect.addEventListener('change', getGenderAndSpecie)
-//getYourCharacter.addEventListener('submit', randomCharacter)
+getYourCharacter.addEventListener('submit', randomCharacter)
+
+
 
 //  login
 function login(){
@@ -38,6 +40,8 @@ function registrar(){
   var errorCode = error.code;
   var errorMessage = error.message;
 });
+document.getElementById("screen1").style.display="none";
+document.getElementById("screen2").style.display="block";
 }
 
 //array género y especie
@@ -45,10 +49,20 @@ function getGenderAndSpecie(e){
   let specie = e.target.value
   let gender = genderSelect.value
   let list = getCharsByGender(gender)
-  let list2 = getCharsBySpecie(specie, list)
+  let list2 = getCharsBySpecie(specie, list);
+
 console.log(list2)
-  // personaje en el dom
-    let character = list2.values();
-      for (let valor of character){
-        document.getElementById("tuPersonaje").innerHTML += "¡Hola " + `${valor.name}` + "!"}
 }
+
+//personaje aleatorio
+function randomCharacter (e, getGenderAndSpecie){
+  e.preventDefault()
+  document.getElementById("screen1").style.display="none";
+  document.getElementById("screen3").style.display= "block";
+
+   //let random = getGenderAndSpecie[Math.floor(Math.random()*getGenderAndSpecie.length)]
+   //console.log(randomCharacter(getGenderAndSpecie))
+  // personaje en el dom
+  //let character = random.values();
+  //  for (let valor of character){
+    //  document.getElementById("tuPersonaje").innerHTML += "¡Hola " + `${valor.name}` + "!"}
