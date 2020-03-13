@@ -7,7 +7,6 @@ import {getCharsBySpecie,
 
 // nodos
 let button = document.querySelector('#facebook')
-let registro = document.querySelector('#registro')
 let select = document.querySelector('.persona')
 let especieSelect = document.querySelector('#especie')
 let genderSelect = document.querySelector('#genero')
@@ -34,15 +33,15 @@ function login(){
 }
 
 function registrar(){
-  //var email = document.querySelector('#email').value;
-  //var password = document.querySelector('#password').value;
-  //firebase.auth().signInWithEmailAndPassword(email, password)
-  //.catch(function(error) {
-  //var errorCode = error.code;
-  //var errorMessage = error.message;
-//});
-document.querySelector("#screen1").style.display="none";
-document.querySelector("#screen2").style.display="block";
+  var email = document.querySelector('#email').value;
+  var password = document.querySelector('#password').value;
+  firebase.auth().signInWithEmailAndPassword(email, password)
+  .catch(function(error) {
+  var errorCode = error.code;
+  var errorMessage = error.message;
+});
+document.getElementById("screen1").style.display="none";
+document.getElementById("screen2").style.display="block";
 }
 
 //array género y especie
@@ -58,11 +57,12 @@ console.log(list2)
 //personaje aleatorio
 function randomCharacter (e, getGenderAndSpecie){
   e.preventDefault()
-
+  document.getElementById("screen1").style.display="none";
+  document.getElementById("screen3").style.display= "block";
 
    //let random = getGenderAndSpecie[Math.floor(Math.random()*getGenderAndSpecie.length)]
    //console.log(randomCharacter(getGenderAndSpecie))
   // personaje en el dom
   //let character = random.values();
   //  for (let valor of character){
-  //  document.getElementById("tuPersonaje").innerHTML += "¡Hola " + `${valor.name}` + "!"}
+    //  document.getElementById("tuPersonaje").innerHTML += "¡Hola " + `${valor.name}` + "!"}

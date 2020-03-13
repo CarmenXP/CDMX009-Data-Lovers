@@ -32,8 +32,6 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
-<!--pantalla 1 -->
-<div id ="screen1" class= "pantalla">
 <div class ="header">
 <div id="root"></div>
 </div>
@@ -54,7 +52,7 @@
     </div>
 
     <!--registro email y contraseña -->
-      <div class = "button2">
+      <div class = "placeholder">
       <input type="email" placeholder="correo" id="email"><br><br>
       <input type="password" placeholder="contraseña" id="password"><br><br>
       <button id="registro">Registrar</button>
@@ -69,9 +67,9 @@
   <!-- Footer -->
 <div class="footer">
 </div>
-</div>
+</section>
 <!--pantalla 2 formulario -->
-<div id= "screen2" class="pantalla" >
+<section id= screen2>
   <div class ="header2">
     <h2>New Morty</h2>
   </div>
@@ -144,19 +142,16 @@
         </form>
       </div>
     </div>
-    <div class = "footer2">
-   </div>
- </div>
 
   <!--pantalla 3 personaje & match -->
-  <div id= "screen3" class="esconder" >
-<div class ="header3">
-</div>
-<p id = "tuPersonaje"> Resultado de personaje</p>
-<div class="footer3">
-</div>
-</div>
+<p id = tuPersonaje></p>
+          <div class="footer2">
+          </div>
+  </section>
+
+
     <script type="module" src="main.js"></script>
+
   </body>
 
 </html>
