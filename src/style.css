@@ -1,3 +1,4 @@
+
 body{
 background-color: #fff;
 }
@@ -98,12 +99,11 @@ width: 50%;
   background-color:#bd6aff;
   color: white;
   }
+  .footer{
+  padding: 16px;
+  background: #54d6b2;
+  }
 
-
-.footer {
-padding: 16px;
-background: #54d6b2;
-}
 .header2{
 padding: 0px;
 background: #fff;
@@ -150,14 +150,25 @@ justify-content:  center;
   background-color:#bd6aff;
   color: white;
   }
+  .footer2 {
+  padding: 16px;
+  background: #54d6b2;
+  }
 
-.footer2 {
+  .header3{
+  padding: 0px;
+  background: #54d6b2;
+  }
+.footer3 {
 padding: 15px;
 background: #54d6b2;
 }
-#screen1 {
-display: block;
+#screen1{
+  display:block;
 }
-#screen2 {
-display: block;
+#screen2{
+  display:none;
+}
+#screen3{
+  display:none;
 }
