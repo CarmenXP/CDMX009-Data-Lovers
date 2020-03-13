@@ -14,9 +14,8 @@ let getYourCharacter = document.querySelector('#enviar')
 
 // listeners
 button.addEventListener('click', login)
-registro.addEventListener('click', registrar)
 especieSelect.addEventListener('change', getGenderAndSpecie)
-getYourCharacter.addEventListener('submit', randomCharacter)
+getYourCharacter.addEventListener('submit', getRandomCharacter)
 
 
 
@@ -40,10 +39,8 @@ function registrar(){
   var errorCode = error.code;
   var errorMessage = error.message;
 });
-document.getElementById("screen1").style.display="none";
-document.getElementById("screen2").style.display="block";
-}
 
+}
 //array género y especie
 function getGenderAndSpecie(e){
   let specie = e.target.value
@@ -55,14 +52,25 @@ console.log(list2)
 }
 
 //personaje aleatorio
-function randomCharacter (e, getGenderAndSpecie){
+function getRandomCharacter (getGenderAndSpecie, n, e){
   e.preventDefault()
-  document.getElementById("screen1").style.display="none";
-  document.getElementById("screen3").style.display= "block";
+    let random = [];
+    for (let i = 0; i < n; i++) {
+      random.push(getGenderAndSpecie[Math.floor(Math.random() * getGenderAndSpecie.length)]);
+  };
+  console.log(random)
+}
 
-   //let random = getGenderAndSpecie[Math.floor(Math.random()*getGenderAndSpecie.length)]
-   //console.log(randomCharacter(getGenderAndSpecie))
-  // personaje en el dom
-  //let character = random.values();
-  //  for (let valor of character){
-    //  document.getElementById("tuPersonaje").innerHTML += "¡Hola " + `${valor.name}` + "!"}
+//  personaje en el dom
+function showCharacter (){
+  let character = choice.values();
+    for (let valor of character){
+        const template = document.createElement('div');
+        template.classList.add('character');
+        template.innerHTML = `<img src="'+ character.image'"></img>`
+          document.getElementById('characterTemplate').appendChild(template)
+      };
+}
+
+//  let random = getGenderAndSpecie[Math.floor(Math.random()*getGenderAndSpecie.length)]
+//  document.getElementById("tuPersonaje").innerHTML += "¡Hola " + `${valor.name}` + "!"}
