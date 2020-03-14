@@ -155,9 +155,33 @@ justify-content:  center;
 padding: 15px;
 background: #54d6b2;
 }
+#content4{
+width: 100%;
+display: flex;
+background-color: #fff;
+height: 600px;
+
+
+}
+.header3{
+padding: 15px;
+background: #54d6b2;
+}
+.footer3 {
+padding: 15px;
+background: #54d6b2;
+}
+.screen3{
+  background-color: #fff;
+}
+
+
 #screen1 {
 display: block;
 }
 #screen2 {
+display: block;
+}
+#screen3 {
 display: block;
 }

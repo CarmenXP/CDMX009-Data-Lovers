@@ -11,11 +11,14 @@ let select = document.querySelector('.persona')
 let especieSelect = document.querySelector('#especie')
 let genderSelect = document.querySelector('#genero')
 let getYourCharacter = document.querySelector('#enviar')
-
+let change1= document.querySelector("#registro")
+let change2= document.querySelector("#enviar")
 // listeners
 button.addEventListener('click', login)
 especieSelect.addEventListener('change', getGenderAndSpecie)
 getYourCharacter.addEventListener('submit', getRandomCharacter)
+change1.addEventListener("click", pantalla1)
+change2.addEventListener("click", pantalla2)
 
 
 
@@ -39,7 +42,15 @@ function registrar(){
   var errorCode = error.code;
   var errorMessage = error.message;
 });
-
+}
+function pantalla1(){
+ document.getElementById("screen1").style.display="none";
+ document.getElementById("screen2").style.display="block";
+}
+function pantalla2(e){
+ e.preventDefault();
+ document.getElementById("screen2").style.display="none";
+ document.getElementById("screen3").style.display="block";
 }
 //array género y especie
 function getGenderAndSpecie(e){
@@ -61,6 +72,7 @@ function getRandomCharacter (getGenderAndSpecie, n, e){
   console.log(random)
 }
 
+
 //  personaje en el dom
 function showCharacter (){
   let character = choice.values();
@@ -70,7 +82,7 @@ function showCharacter (){
         template.innerHTML = `<img src="'+ character.image'"></img>`
           document.getElementById('characterTemplate').appendChild(template)
       };
-}
+    }
 
 //  let random = getGenderAndSpecie[Math.floor(Math.random()*getGenderAndSpecie.length)]
 //  document.getElementById("tuPersonaje").innerHTML += "¡Hola " + `${valor.name}` + "!"}
