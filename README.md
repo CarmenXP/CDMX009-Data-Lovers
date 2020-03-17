@@ -19,9 +19,9 @@
 
 ## 2. Historias de usuario
 
-    Historia 1. Yo como: Usuario de la página 'New Morties'
-            Quiero: Entrar al sitio web
-            Para: Comunicarme con otros fans
+    *Historia 1. Yo como: Usuario de la página 'New Morties'
+                Quiero: Entrar al sitio web
+                Para: Comunicarme con otros fans
      
         Definición de Terminado 
             *
