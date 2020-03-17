@@ -2,14 +2,11 @@
 
 ## Índice
 
-* [1. Definición del producto](#1-preámbulo)
-* [2. Historias de usuario](#2-resumen-del-proyecto)
-* [3. Diseño de la Interfaz de Usuario](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Parte adicional-opcional (extensión)](#6-parte-adicional-opcional-extensión)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+* [1. Definición del Producto](#1-definición-del-producto)
+* [2. Historias de Usuario](#2-historias-de-usuario)
+* [3. Diseño de la Interfaz de Usuario](#3-diseño-de-la-interfaz-de-usuario)
+* [4. Implementación de la Interfaz de Usuario (HTML/CSS/JS)](#4-implementación-de-la-interfaz-de-usuario)
+* [5. Pruebas unitarias](#5-pruebas-unitarias)
 
 ***
 
