@@ -63,7 +63,7 @@ El diseño de la interfaz se realizó primero con prototipos de baja fidelidad p
 * 
 
 
-## 4. Implementación de la Interfaz de Usuario (HTML/CSS/JS)
+## 4. Implementación de la Interfaz de Usuario
 
 1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista, etc.
 2. Permitir al usuario interactuar para obtener la infomación que necesita. <!--filtrar y ordenar la data.-->
