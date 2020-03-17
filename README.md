@@ -19,34 +19,34 @@
 
 ## 2. Historias de usuario
 
-Historia 1. Yo como: Usuario de la página 'New Morties'
+    Historia 1. Yo como: Usuario de la página 'New Morties'
             Quiero: Entrar al sitio web
             Para: Comunicarme con otros fans
      
-   Definición de Terminado 
+        Definición de Terminado 
             *
             *
-   Criterios de Aceptación
+        Criterios de Aceptación
             *
 
      Historia 2. Yo como: Usuario de la página 'New Morties'
                  Quiero: Obtener un personaje de Rick & Morty con el cual me sienta identificado
                  Para: Conocer a otros fans con similitudes en personalidad
             
-     Definición de Terminado 
+        Definición de Terminado 
             *
             *
-     Criterios de Aceptación
+        Criterios de Aceptación
             *
    
      Historia 3. Yo como: Usuario de la página 'New Morties'
                  Quiero: Comunicarme con mis New Morties
                  Para: Suscitar lazos de amistad con otros fans de la serie
 
-     Definición de Terminado 
+        Definición de Terminado 
             *
             *
-     Criterios de Aceptación
+        Criterios de Aceptación
             *
 
 ## 3. Diseño de la Interfaz de Usuario
