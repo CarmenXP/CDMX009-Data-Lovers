@@ -61,6 +61,9 @@ El diseño de la interfaz se realizó primero con prototipos de baja fidelidad p
 ### Prototipo de alta fidelidad
 
 
+![](https://github.com/.png)
+
+
 ### Testeos de usabilidad
 * 
 
