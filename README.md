@@ -29,6 +29,7 @@
         Criterios de Aceptación
             *
 
+
      Historia 2. Yo como: Usuario de la página 'New Morties'
                  Quiero: Obtener un personaje de Rick & Morty con el cual me sienta identificado
                  Para: Conocer a otros fans con similitudes en personalidad
@@ -38,6 +39,7 @@
             *
         Criterios de Aceptación
             *
+            
    
      Historia 3. Yo como: Usuario de la página 'New Morties'
                  Quiero: Comunicarme con mis New Morties
