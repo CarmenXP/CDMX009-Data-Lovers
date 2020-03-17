@@ -5,7 +5,7 @@
 * [1. Definición del Producto](#1-definición-del-producto)
 * [2. Historias de Usuario](#2-historias-de-usuario)
 * [3. Diseño de la Interfaz de Usuario](#3-diseño-de-la-interfaz-de-usuario)
-* [4. Implementación de la Interfaz de Usuario (HTML/CSS/JS)](#4-implementación-de-la-interfaz-de-usuario)
+* [4. Implementación de la Interfaz de Usuario (HTML/CSS/JS)](#4-implementación-de-la-interfaz-de-usuario-(html/css/js))
 * [5. Pruebas unitarias](#5-pruebas-unitarias)
 
 ***
