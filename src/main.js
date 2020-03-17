@@ -11,7 +11,10 @@ let getYourCharacter = document.querySelector('#enviar')
 let change1= document.querySelector("#registro")
 let change2= document.querySelector("#enviar")
 const flipCards = document.querySelector('#flipCardsMatch')
-let specie = [];
+let chat= document.querySelector("#ir-chat")
+let volver = document.querySelector("#volver-inicio")
+//let personajeSpecie = [];
+
 
 // listeners
 button.addEventListener('click', login)
@@ -19,6 +22,9 @@ especieSelect.addEventListener('change', getGenderAndSpecie)
 //getYourCharacter.addEventListener('click', getRandomCharacter)
 change1.addEventListener("click", pantalla1)
 change2.addEventListener("click", pantalla2)
+chat.addEventListener("click", pantalla3)
+volver.addEventListener("click", principal)
+
 
 //  login
 function login(){
@@ -57,24 +63,17 @@ function getGenderAndSpecie(e){
   let gender = genderSelect.value
   let list = getCharsByGender(gender)
   let list2 = getCharsBySpecie(specie, list)
-  let match = getMatchBySpecie (specie)
-  
-
-
-console.log(match)
+  //let match = getMatchBySpecie.map(specie)
+  let lista= list2.pop();
+  console.log(list2)
 }
 
-//  personaje en el dom
-//function showCharacter (){
-//  let character = choice.values();
-  //for (let valor of character){
-//  document.getElementById("tuPersonaje").innerHTML += "¡Hola " + `${valor.name}` + "!"}
-
 //match en el dom
-function createFlipCardMatch(match) {
+function createFlipCardMatch(list2) {
   flipCard.innerHTML = '';
-  for (let item of match) {
+  for (let item of list2) {
   flipCard.innerHTML +=
+
   `
 <div class="flip-card">
 <div class="flip-card-inner">
@@ -93,3 +92,21 @@ function createFlipCardMatch(match) {
   `
 }
 }
+
+// Ir a página del Chat
+function pantalla3(){
+ document.getElementById("screen1").style.display="none";
+ document.getElementById("screen2").style.display="none";
+ document.getElementById("screen3").style.display="none";
+ document.getElementById("screen4").style.display="block";
+}
+
+function principal(){
+document.getElementById("screen1").style.display="block";
+}
+
+//  personaje en el dom
+//function showCharacter (){
+//  let character = choice.values();
+//  for (let valor of character){
+//  document.getElementById("tuPersonaje").innerHTML += "¡Hola " + `${valor.name}` + "!"}

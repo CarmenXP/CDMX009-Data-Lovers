@@ -155,13 +155,16 @@ justify-content:  center;
 padding: 15px;
 background: #54d6b2;
 }
+.screen3{
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+}
 #content4{
-width: 100%;
-display: flex;
-background-color: #fff;
-height: 600px;
-
-
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  height: 600px;
 }
 .header3{
 padding: 15px;
@@ -171,9 +174,108 @@ background: #54d6b2;
 padding: 15px;
 background: #54d6b2;
 }
-.screen3{
-  background-color: #fff;
+#ir-chat{
+  background-color: #00b39d;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  padding: 14px 40px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
+
+#content5{
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  height: 600px;
+}
+  .chat {
+      font:15px arial;
+      color:#9A2EFE;
+      text-align:center;
+      padding:35px;
+      display: flex;
+      align-self: flex-end;
+    }
+  form, p, span {
+      margin:0;
+      padding:0; }
+
+  input { font:12px arial; }
+
+  a {
+      color:#9A2EFE;
+      text-decoration:none; }
+
+      a:hover { text-decoration:underline; }
+
+  #boxchat, #loginform {
+      margin:0 auto;
+      padding-bottom:25px;
+      background:rgb(72, 198, 207);
+      width:504px;
+      border:1.2px solid #58FAD0; }
+
+
+
+  #chatbox {
+      text-align:center;
+      margin:0 auto;
+      margin-bottom:25px;
+      padding:10px;
+      background:rgb(250, 252, 251);
+      height:270px;
+      width:430px;
+      border:1.2px solid #58FAD0;
+      overflow:auto; }
+
+  #usermsg {
+      width:395px;
+      border:1.2px solid #58FAD0;
+      background: #EBF4FB
+
+      }
+
+  #submit { width: 60px }
+
+
+
+  #menu { padding:12.5px 25px 12.5px 25px; }
+
+  .saludo { float:left; }
+  .logout { float:right; }
+
+}
+#friends{
+  height: 100%;
+  width: 35%;
+  display: flex;
+  background-color: #A9F5E1;
+  flex-direction: column;
+  align-self: flex-start;
+
+}
+#volver-inicio{
+background-color: #00b39d;
+border: none;
+color: white;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 12px;
+margin: 2px 1px;
+padding: 7px 20px;
+border-radius: 12px;
+cursor: pointer;
+transition-duration: 0.4s
+}
+
 
 
 #screen1 {
@@ -184,4 +286,7 @@ display: block;
 }
 #screen3 {
 display: block;
+}
+#screen4{
+  display: block;
 }
