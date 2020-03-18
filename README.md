@@ -60,7 +60,7 @@
 
 ## 3. Diseño de la Interfaz de Usuario
 
-El diseño de la interfaz se realizó primero con prototipos de baja fidelidad para realizar pruebas de testing de usabilidad y así incluir las mejoras indicadas por los usuarios en el prototipo de alta fidelidad.
+El diseño de la interfaz se realizó primero con prototipos de baja fidelidad para realizar pruebas de testing de usabilidad y así incluir las mejoras proporcionadas por los usuarios en el prototipo de alta fidelidad.
 
 ### Prototipo de baja fidelidad
 
