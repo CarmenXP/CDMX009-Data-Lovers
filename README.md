@@ -57,11 +57,12 @@ El diseño de la interfaz se realizó primero con prototipos de baja fidelidad p
 
 ### Prototipo de baja fidelidad
 
+![baja fidelidad1](https://github.com/CarmenXP/CDMX009-Data-Lovers/blob/master/src/imagens/sketch1.jpg)
+![baja fidelidad2](https://github.com/CarmenXP/CDMX009-Data-Lovers/blob/master/src/imagens/sketch2.jpg)
 
 ### Prototipo de alta fidelidad
 
-
-![](https://github.com/.png)
+![alta fidelidad](https://github.com/CarmenXP/CDMX009-Data-Lovers/blob/master/src/imagens/New%20Mortys(1).png)
 
 
 ### Testeos de usabilidad
