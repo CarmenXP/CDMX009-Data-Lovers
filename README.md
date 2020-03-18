@@ -23,33 +23,40 @@
                 Quiero: Entrar al sitio web
                 Para: Comunicarme con otros fans
      
-        Definición de Terminado 
-            *
-            *
-        Criterios de Aceptación
-            *
+            Criterios de Aceptación 
+              * El usuario debe ingresar al sitio con un login
+            Definición de Terminado
+              * El login se realiza a través de una cuenta en Facebook
+              * El login se realiza a través de una cunenta de correo electrónico
 
 
      Historia 2. Yo como: Usuario de la página 'New Mortys'
                  Quiero: Obtener un personaje de Rick & Morty con el cual me sienta identificado
                  Para: Conocer a otros fans con similitudes en personalidad
             
-        Definición de Terminado 
-            *
-            *
-        Criterios de Aceptación
-            *
+            Criterios de Aceptación 
+              * El usuario debe responder un formulario
+              * El usuario debe enviar el formulario
+            Definición de Terminado
+              * Obtener valores del formulario respondido 
+              * Filtrar un personaje con los valores obtenidos del formulario
+              * Mostrar el personaje en pantalla
+              * Filtrar los match con los valores obtenidos del formulario
+              * Mostrar los match con los que puede comunicarse en pantalla
             
    
      Historia 3. Yo como: Usuario de la página 'New Mortys'
                  Quiero: Comunicarme con mis New Morties
                  Para: Suscitar lazos de amistad con otros fans de la serie
 
-        Definición de Terminado 
-            *
-            *
-        Criterios de Aceptación
-            *
+            Criterios de Aceptación 
+              * El usuario debe interactuar con un "New Morty" a través del chat
+              * El usuario debe seleccionar entre los "New Mortys" para chatear
+            Definición de Terminado
+              * Mostrar en pantalla el chat con el "New Morty" seleccionado
+              * Enviar y recibir textos a través del chat
+              * Mostrar en pantalla a los "New Mortys" con los que puede chatear
+             
 
 ## 3. Diseño de la Interfaz de Usuario
 
@@ -66,16 +73,28 @@ El diseño de la interfaz se realizó primero con prototipos de baja fidelidad p
 
 
 ### Testeos de usabilidad
-* 
 
+Se realizó testeo con compañeras del bootcamp, las cuales nos proporcionaron información para realizar mejoras en la página web, las cuales son las siguientes:
+  
+  * Colocar un botón que nos retorne a la página de registro 
+  * Tener más opciones de match para chatear
+  * Desplazarse entre las diferentes opciones de match
+  * Poder agregar más personajes al chat
+  * Tener un botón de salir del chat
 
 ## 4. Implementación de la Interfaz de Usuario
 
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista, etc.
-2. Permitir al usuario interactuar para obtener la infomación que necesita. <!--filtrar y ordenar la data.-->
-3. Ser _responsive_, es decir, debe visualizarse sin problemas desde distintos
-   tamaños de pantallas: móviles, tablets y desktops.
-4. Que la interfaz siga los fundamentos de _visual design_.
+1. Mostrar la data en una interfaz: 
+
+![data en interfaz]()
+
+2. Permitir al usuario interactuar para obtener la infomación que necesita
+
+![formulario]()
+
+3. Ser _responsive_
+
+4. Que la interfaz siga los fundamentos de _visual design_
 
 
 ## 5. Pruebas unitarias
