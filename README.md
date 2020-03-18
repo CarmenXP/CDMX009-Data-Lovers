@@ -1,4 +1,4 @@
-# Data Lovers : 'New Morties' 
+# Data Lovers : 'New Mortys' 
 
 ## Índice
 
@@ -12,7 +12,7 @@
 
 ## 1. Definición del producto
 
-'New Morties' fue diseñada para que los fans de Rick and Morty puedan interactuar entre ellos a través de un chat. En primer instancia se asigna un personaje conforme la información obtenida del usuario para posteriormente con base en esta información, mostrarle aquellos "new morties" con los que podrá comunicarse. El usuario principal son adolescentes y adultos jóvenes (+13).
+'New Mortys' fue diseñada para que los fans de Rick and Morty puedan interactuar entre ellos a través de un chat. En primer instancia se asigna un personaje conforme la información obtenida del usuario para posteriormente con base en esta información, mostrarle aquellos "new mortys" con los que podrá comunicarse. El usuario principal son adolescentes y adultos jóvenes (+13).
 
 \* Puedes ver la página New Morties en este [link](https://)
 
@@ -59,6 +59,9 @@ El diseño de la interfaz se realizó primero con prototipos de baja fidelidad p
 
 
 ### Prototipo de alta fidelidad
+
+
+![](https://github.com/.png)
 
 
 ### Testeos de usabilidad
