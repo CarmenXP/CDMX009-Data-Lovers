@@ -19,7 +19,7 @@
 
 ## 2. Historias de usuario
 
-     Historia 1. Yo como: Usuario de la página 'New Morties'
+     Historia 1. Yo como: Usuario de la página 'New Mortys'
                 Quiero: Entrar al sitio web
                 Para: Comunicarme con otros fans
      
@@ -30,7 +30,7 @@
             *
 
 
-     Historia 2. Yo como: Usuario de la página 'New Morties'
+     Historia 2. Yo como: Usuario de la página 'New Mortys'
                  Quiero: Obtener un personaje de Rick & Morty con el cual me sienta identificado
                  Para: Conocer a otros fans con similitudes en personalidad
             
@@ -41,7 +41,7 @@
             *
             
    
-     Historia 3. Yo como: Usuario de la página 'New Morties'
+     Historia 3. Yo como: Usuario de la página 'New Mortys'
                  Quiero: Comunicarme con mis New Morties
                  Para: Suscitar lazos de amistad con otros fans de la serie
 
