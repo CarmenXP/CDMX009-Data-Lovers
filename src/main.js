@@ -63,35 +63,67 @@ function getGenderAndSpecie(e){
   let gender = genderSelect.value
   let list = getCharsByGender(gender)
   let list2 = getCharsBySpecie(specie, list)
+  let friends= document.querySelector("#flipCard").innerHTML = showCard(list2);
   //let match = getMatchBySpecie.map(specie)
   let lista= list2.pop();
-  console.log(list2)
+console.log(list2)
 }
+// tus amigos section
 
+function createNode(element) {
+      return document.createElement(element);
+  }
+
+  function append(parent, el) {
+    return parent.appendChild(el);
+  }
+
+  const ul = document.getElementById('characters');
+  const url = "https://rickandmortyapi.com/api/character/?gender=female&species=alien";
+  fetch(url)
+  .then((resp) => resp.json())
+  .then(function(data) {
+    let characters = data.results;
+    return characters.map(function(character) {
+      let li = createNode('li'),
+          img = createNode('img'),
+          span = createNode('span');
+      img.src = character.image;
+      span.innerHTML = `${character.name}`
+      append(li, img);
+      append(li, span);
+      append(ul, li);
+    })
+  })
+//const showCard = (results) => {
+//  for (let i = 0; i < results.length; i++) {
+//    const allResults = document.createElement("div");
+//    allResults.className = "characters";
+//    allResults.innerHTML = `<img src=${showCard[i].image}></img>` + `<p>Name: ${showCard[i].name}</p>` + `<p>Specie: ${showCard[i].species}</p>` + `<p>Status: ${showTypes[i].status}</p>` + `<p>Gender: ${showTypes[i].gender}</p`;
+//    document.querySelector('#flipCard').appendChild(allResults);
+//  }
+//}
 //match en el dom
-function createFlipCardMatch(list2) {
-  flipCard.innerHTML = '';
-  for (let item of list2) {
-  flipCard.innerHTML +=
-
-  `
-<div class="flip-card">
-<div class="flip-card-inner">
- <div class= "front">
-        <img class= "" height:200px width:200px border-radius: 50% src="${item.image}" alt="">
-        <h2 class="" id="name">Name:"${item.name}" </h2> </div>
-        <div class="back">
-        <p id="species"> Especie:"${item.species}"</p>
-        <p id="gender">Género::"${item.gender}"</p>
-        <p id="status"> Status:"${item.status}"</p>
-        <p id="origin"> Origen:"${item.origin.name}" </p>
-        <p id="location"> Ubicación:"${item.location.name}" </p>
-        </div>
-</div>
-</div>
-  `
-}
-}
+//function createFlipCardMatch(result) {
+//  flipCard.innerHTML = '';
+//  for (let item of results) {
+//  flipCard.innerHTML +=
+//`<div class="flip-card">
+//<div class="flip-card-inner">
+// <div class= "front">
+//        <img class= "" height:200px width:200px border-radius: 50% src="${item.image}" alt="">
+//        <h2 class="" id="name">Name:"${item.name}" </h2> </div>
+//        <div class="back">
+//        <p id="species"> Especie:"${item.species}"</p>
+//        <p id="gender">Género::"${item.gender}"</p>
+//        <p id="status"> Status:"${item.status}"</p>
+//        <p id="origin"> Origen:"${item.origin.name}" </p>
+//        <p id="location"> Ubicación:"${item.location.name}" </p>
+//        </div>
+//</div>
+//</div>`
+//}
+//}
 
 // Ir a página del Chat
 function pantalla3(){
